@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navigation{
+    background-image: linear-gradient(dodgerblue, rgb(21, 5, 60));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
+    
+    
+}
+.navigation>ul{
+    display: flex;
+    margin-right: 100px;
+    
+    
+}
+
+.navigation>ul>li{
+    list-style: none;
+    margin:0px 10px  ;
+    margin-left: -5px;
+    padding: 20px 0px ;
+    
+    
+   
+    
+}
+.navigation>ul>li>a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 16px;
+    border: 1px solid white;
+    padding: 16px 25px ;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.navigation>ul>li:first-child>a{
+    border-left: 1px solid white;
+    padding-left: 20px;
+}
+
+.logo{
+    color: white;
+    margin-left:30px  ;
+    
+}
+.span{
+    color: yellow;
+    font-size: 30px;
+  
+}
+.navigation>ul>li:hover>a{
+    background-color: rgb(102, 65, 236);
+    
+
+}
+/* Dopdown menu code start */
+.dropdownmenu{
+   opacity: 0;
+   background-color:dodgerblue ;
+   text-align: center;
+   margin-top: 16px;
+   width: 226px;
+   position: absolute;
+   transition: 0.5s;
+   visibility: hidden;
+   transform: scaley(0);
+   transform-origin: top;
+   
+
+}
+.dropdownmenu>li:hover{
+    background-color: blue;
+    
+}
+.dropdownmenu>li{
+    list-style: none;
+    padding:10px 0 ;
+    border: 1px solid rgb(232, 244, 235);
+    
+    
+}
+.dropdownmenu>li>a{
+    color: aliceblue;
+    text-decoration: none;
+   
+}
+.navigation>ul>li:hover>.dropdownmenu{
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+    
+}
+
+/* Hero Area Code Start Here */
+.main-header{
+    height: 90vh;
+    text-align: center;
+    background-image: url('image/webheader.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header-container{
+    padding-top: 80px;
+    
+}
+.header-container>h1{
+    width: 500px;
+    padding: 15px 25px;
+    margin:20px auto;
+    font-size: 50px;
+    color: aliceblue;
+    background-color: rgba(29, 43, 231, 0.549);
+    border-radius: 10px ;
+}
+.header-container>h4{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.h5{
+    font-size: 25px;
+    color: rgba(56, 52, 52, 0.849);
+}
+.button{
+    font-size: 30px;
+    color: aliceblue;
+    margin-top: 10px;
+    padding:10px 30px;
+    background-color: rgba(12, 93, 175, 0.633);
+    border: 3px solid rgb(17, 225, 69);
+    border-radius: 30px 10px 30px 10px ;
+    cursor: pointer;
+    transition: 1s;
+}
+.button:hover{
+    background-color: rgba(5, 44, 84, 0.192);
+}
+.icon>a>i{
+    width: 50px;
+    height: 50px;
+    align-content: center;
+    border: 2px solid rgb(63, 219, 102);
+    font-size: 30px;
+    background-color: rgba(30, 8, 155, 0.659);
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: 0.5s;
+    color: white;
+    transform:rotate3d(60deg)
+    
+}
+.icon>a>i:hover{
+    background-color: rgba(54, 133, 212, 0.644);
+    transform: rotate(360deg);
+   
+}
